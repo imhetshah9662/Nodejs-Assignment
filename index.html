@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Seat Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth-section">
+    <h1>Login & Signup</h1>
+
+    <!-- Login Form -->
+    <div id="login-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup-section">
+      <h2>Signup</h2>
+      <form id="signup-form">
+        <label for="new-username">Username:</label>
+        <input type="text" id="new-username" required>
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" required>
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="booking-section" style="display: none;">
+    <h1>Seat Booking</h1>
+    <h2>Available Seats</h2>
+    <div id="seats"></div>
+
+    <h3>Reserve Seats</h3>
+    <input type="number" id="seat-count" min="1" max="7" placeholder="Number of seats">
+    <button id="reserve-btn">Reserve</button>
+
+    <h3>Cancel Reservation</h3>
+    <input type="text" id="seat-ids" placeholder="Enter seat IDs (comma-separated)">
+    <button id="cancel-btn">Cancel</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

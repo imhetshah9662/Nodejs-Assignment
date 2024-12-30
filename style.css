@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  #seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  .seat.booked {
+    background-color: red;
+    cursor: not-allowed;
+  }
+  #login-section, #signup-section {
+    margin: 20px;
+  }
+  input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  button {
+    cursor: pointer;
+  }
+  
